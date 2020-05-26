@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="UTF-8">
+    <title>DemoGyr</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>x-axis</th>
+        <th>y-axis</th>
+        <th>z-axis</th>
+    </tr>
+    <tr>
+        <th id="xvalue"></th>
+        <th id="yvalue"></th>
+        <th id="zvalue"></th>
+    </tr>
+</table>
+<div id="app">
+    <div id="buttons">
+        <button id="readbatterylevel">Scan For Devices</button>
+        <!--<button id="startNotifications">Start Notifications</button>-->
+        <!--<button id="stopNotifications">Stop Notifications</button>-->
+        <button id="reset">Reset Device</button>
+        <button id="configure">Configure and start notifications of temperature data</button>
+        <p id="message">Press Scan For Devices to start your session</p>
+    </div>
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+<br>
+<br>
+
+
+<script src="/javascripts/temperatures.js"></script>
+</body>
+</html>
